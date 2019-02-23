@@ -3,7 +3,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
     mode: 'development',
-    entry: './Scripts/es6/main.js',
+    entry: ['@babel/polyfill','whatwg-fetch', './Scripts/es6/main.js'],
     output: {
         path: path.resolve(__dirname, './Scripts/build'),
         filename: 'bundle.js'
